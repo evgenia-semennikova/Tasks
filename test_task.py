@@ -1,5 +1,6 @@
 import tokenize
 import ast
+from collections import Counter
 
 
 def calc_fix_comments(filename):
