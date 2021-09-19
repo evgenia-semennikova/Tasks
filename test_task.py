@@ -47,10 +47,10 @@ def calc_names(node):
 
 
 # Task 1
-print(calc_fix_comments('test.py'))
+assert calc_fix_comments('test.py') == 3
 
 # Task 2
-print(calc_names(prepare_ast('test.py'))[0])
+assert calc_names(prepare_ast('test.py'))[0] == Counter({'a': 5, 'b': 4})
 
 # Task 3
-print(calc_names(prepare_ast('test.py'))[1])
+assert calc_names(prepare_ast('test.py'))[1] == Counter({'foo': 2, 'print': 1})
